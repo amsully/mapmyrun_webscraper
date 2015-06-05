@@ -33,7 +33,20 @@ def scrape( link ):
 
 
 def getHeader(soup):
-	return "TEST"
+
+	header_date = soup.find_all('span',class_="workout_date notranslate")[0].getText()
+
+	metadata = soup.find('div',id="metadata").getText()
+	metadata_array = metadata.split("\n")
+	metadata_clean = [ data.strip() for data in metadata_array if(data != '') ]
+
+	header_miles = metadata_clean[3]
+	header_pace = metadata_clean[9]
+	header_time = metadata_clean[5]
+	header_title = metadata_clean[1]
+
+	return( header_date + " | " + header_miles + " | " + header_pace + " | " + header_time + "\n" + header_title)
+
 
 def getComments(soup):
 	comments = soup.select('p.comment_content')
