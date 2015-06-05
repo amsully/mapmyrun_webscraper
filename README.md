@@ -1,5 +1,5 @@
 # mapmyrun_webscraper
-NOTE: This webscraper only adds functionality to the premium membership. It in no way extracts data in order to avoid having to pay. Could be a feature though!
+NOTE: This webscraper only adds functionality to the premium membership. It in no way extracts data in order to avoid having to pay. It gets the 'comments' from the bottom of each page by iterating over the exports.csv file's URLs.
 
 ## Install
 	- Clone Repo
