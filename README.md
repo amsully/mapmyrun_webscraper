@@ -23,6 +23,5 @@ The output will be result in a formatted text file as shown below:
 	- No need for .csv urls, only account log-in and access to 'my workouts' page
 	- Option to set up automatic syncing with crontab 
 	- Option to save in the original.csv file in a new column
-	- ... syncing all data?
 
 This project is licensed under the terms of the MIT license
